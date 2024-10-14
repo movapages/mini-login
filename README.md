@@ -6,7 +6,7 @@ First, run the development server:
 
 # 1/ Clone the repository
 
-# 2/ Run 
+# 2/ Run npm install
 
 npm i
 
