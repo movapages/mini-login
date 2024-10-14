@@ -10,4 +10,4 @@ Now you can do the following things:
 
 ##### Local Sanity Studio Demo
 
-[Sanity demo app](../sanity-db.gif)
+![Sanity demo app](../sanity-db.gif)

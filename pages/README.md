@@ -4,6 +4,6 @@
 
 ##### Web App Demo
 
-[App demo](../mini-login-video.gif)
+![App demo](../mini-login-video.gif)
 
 
