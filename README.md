@@ -3,6 +3,15 @@
 ### Getting Started
 First, run the development server:
 ```bash
+
+# 1/ Clone the repository
+
+# 2/ Run 
+
+npm i
+
+# 3/ Launch both applications
+
 npm run dev
 ```
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result: _Mini Login_ web app.
