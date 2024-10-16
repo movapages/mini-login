@@ -1,6 +1,7 @@
 import {signIn, SignInResponse} from "next-auth/react";
 import {FormEvent, useState} from "react";
 import {NextRouter, useRouter} from "next/router";
+// import { client } from "../auth/sanity-client";
 
 export default function SignInComponent() {
   const [email, setEmail] = useState("");
@@ -10,6 +11,27 @@ export default function SignInComponent() {
 
   const handleSubmit = async (e: FormEvent): Promise<void> => {
     e.preventDefault();
+
+    // const query = '*[_type == "UserAccount"]';
+
+    // const query = `*[_type == "UserAccount" && lower(Username) == lower($email)][0] {
+    //   "id": UserId,
+    //   Username,
+    //   PasswordHash,
+    //   UserRole-> {
+    //     RoleName,
+    //     RolePermissions
+    //   }
+    // }`;
+
+    // let user = null;
+    // try {
+    //   user = await client.fetch(query, {}, {filterResponse: false});
+    //   // user = await client.fetch(encodeURIComponent(query), {}, {filterResponse: false});
+    // } catch (error) {
+    //   console.error('Error fetching from Sanity:', error);
+    // }
+    // console.log("user: ", user);
 
     const result: SignInResponse | undefined = await signIn("credentials", {
       redirect: false,
